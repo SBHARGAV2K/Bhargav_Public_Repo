@@ -14,6 +14,7 @@ i) _doctrOCR_: To detect, extract and store text obtained from image-based PDFs/
 !pip install python-doctr
 !pip install "python-doctr[tf]"
 !pip install "python-doctr[torch]"
+!pip install pillow
 ```
 
 ii) _EncryptedPDFManagement_: Contains methods to deal with encrypted PDF files. Make sure that the **fitz** module is available through the following installation:-
