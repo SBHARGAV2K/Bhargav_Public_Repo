@@ -11,7 +11,9 @@ The description of each project is shown below:-
 i) __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module; To make use of this module for your project, make sure that the following modules are installed:-
 
 >!pip install python-doctr
+
 >!pip install "python-doctr[tf]"
+
 >!pip install "python-doctr[torch]"
 
 ii) 
