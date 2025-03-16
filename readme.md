@@ -2,9 +2,9 @@ This repository contains my prominent works in the field of Artificial Intellige
 
 Each project is structured as follows:-
 
-    * There is a __project_name.py__ which contains a class of all the methods used in the project.
+1. There is a file of format **project_name.py**, which contains a class of all the methods used in the project.
 
-    * In the __main.py__, the code to execute the project and obtain the output is written.
+2. In the **main.py**, the code to execute the project and obtain the output is written.
 
 You can find my technical content and profile through the following:- 
 
