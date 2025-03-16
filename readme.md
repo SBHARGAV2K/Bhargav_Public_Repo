@@ -8,7 +8,7 @@ Each project is structured as follows (except LogicGatesDataframes):-
 
 The description of each project is shown below:-
 
-i) _doctrOCR_: To detect, extract and store text obtained from image-based PDFs/files using the in-built docTR OCR module. To make use of this module for your project, make sure that the following modules are installed:-
+i) _doctrOCR_: To detect, extract and store text obtained from image-based PDFs/files using the in-built docTR OCR module. To use this module for your use-case, make sure that the following modules are installed:-
 
 ```
 !pip install python-doctr
