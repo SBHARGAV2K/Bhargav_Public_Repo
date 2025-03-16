@@ -1,6 +1,6 @@
 This repository contains my prominent works in the field of Artificial Intelligence, Machine Learning, Data Science, and Python programming.
 
-Each project is structured as follows:-
+Each project is structured as follows (except LogicGatesDataframes):-
 
 1. There is a file named in the format **project_name.py**, which contains a class of all the methods used in the project.
 
@@ -8,7 +8,7 @@ Each project is structured as follows:-
 
 The description of each project is shown below:-
 
-i) _ _doctrOCR_ _: To detect, extract and store text obtained from image-based PDFs/files using the in-built docTR OCR module. To make use of this module for your project, make sure that the following modules are installed:-
+i) _doctrOCR_: To detect, extract and store text obtained from image-based PDFs/files using the in-built docTR OCR module. To make use of this module for your project, make sure that the following modules are installed:-
 
 ```
 !pip install python-doctr
@@ -16,9 +16,17 @@ i) _ _doctrOCR_ _: To detect, extract and store text obtained from image-based P
 !pip install "python-doctr[torch]"
 ```
 
-ii) _ _EncryptedPDFManagement_ _: Contains methods to deal with encrypted PDF files.
+ii) _EncryptedPDFManagement_: Contains methods to deal with encrypted PDF files. Make sure that the **fitz** module is available through the following installation:-
 
-iii) 
+```
+!pip install PyMuPDF
+```
+
+iii) _LogicGatesDataframes_: Codes to implement the 7 basic logic gates, and a working example to show how they can be used to perform efficient dataframe operations.
+
+iv) _PDFClassifier_: 
+
+v) _XMLDataManagement_:
 
 The methods and classes in each project are designed using Sphonx docstring format, and the codes follow PEP8 style guidelines.
 
