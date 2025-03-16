@@ -6,7 +6,13 @@ Each project is structured as follows:-
 
 2. In the **main.py**, the code to execute the project and obtain the output is written.
 
-You can find my technical content and profile through the following:- 
+The description of each project is shown below:-
+
+> __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module;
+
+The methods and classes in each project are designed using Sphonx docstring format, and the codes follow PEP8 style guidelines.
+
+Also, feel free to check out my technical content and profile through the following links:- 
 
 Medium: https://medium.com/@bhargav.sridhar
 
