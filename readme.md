@@ -8,15 +8,17 @@ Each project is structured as follows:-
 
 The description of each project is shown below:-
 
-i) __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module; To make use of this module for your project, make sure that the following modules are installed:-
+i) _ _doctrOCR_ _: To detect, extract and store text obtained from image-based PDFs/files using the in-built docTR OCR module. To make use of this module for your project, make sure that the following modules are installed:-
 
->!pip install python-doctr
+```
+!pip install python-doctr
+!pip install "python-doctr[tf]"
+!pip install "python-doctr[torch]"
+```
 
->!pip install "python-doctr[tf]"
+ii) _ _EncryptedPDFManagement_ _: Contains methods to deal with encrypted PDF files.
 
->!pip install "python-doctr[torch]"
-
-ii) 
+iii) 
 
 The methods and classes in each project are designed using Sphonx docstring format, and the codes follow PEP8 style guidelines.
 
