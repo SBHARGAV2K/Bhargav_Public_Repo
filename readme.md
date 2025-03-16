@@ -2,13 +2,17 @@ This repository contains my prominent works in the field of Artificial Intellige
 
 Each project is structured as follows:-
 
-1. There is a file of format **project_name.py**, which contains a class of all the methods used in the project.
+1. There is a file named in the format **project_name.py**, which contains a class of all the methods used in the project.
 
 2. In the **main.py**, the code to execute the project and obtain the output is written.
 
 The description of each project is shown below:-
 
-i) __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module;
+i) __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module; To make use of this module for your project, make sure that the following modules are installed:-
+
+>!pip install python-doctr
+>!pip install "python-doctr[tf]"
+>!pip install "python-doctr[torch]"
 
 ii) 
 
