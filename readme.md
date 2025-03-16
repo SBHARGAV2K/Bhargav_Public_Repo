@@ -8,7 +8,9 @@ Each project is structured as follows:-
 
 The description of each project is shown below:-
 
-> __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module;
+i) __doctrOCR__: To detect, extract and store text obtained from image-based PDFs using the in-built docTR OCR module;
+
+ii) 
 
 The methods and classes in each project are designed using Sphonx docstring format, and the codes follow PEP8 style guidelines.
 
