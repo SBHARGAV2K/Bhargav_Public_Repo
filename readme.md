@@ -24,7 +24,11 @@ ii) _EncryptedPDFManagement_: Contains methods to deal with encrypted PDF files.
 
 iii) _LogicGatesDataframes_: Codes to implement the 7 basic logic gates, and a working example to show how they can be used to perform efficient dataframe operations.
 
-iv) _PDFClassifier_: To identify if a given PDF file is text-based (digital) or image-based (scanned).
+iv) _PDFClassifier_: To identify if a given PDF file is text-based (digital) or image-based (scanned). Again, the **fitz** module is necessary to execute this project:-
+
+```
+!pip install PyMuPDF
+```
 
 v) _XMLDataManagement_: Converts simple XML files to Pandas data frames, and complex ones to JSON. Note that, since the method of extracting records from the XML file depends on its tree structure, a standard method is not available. However, you can tweak the existing ones according to your use-case(s) and include them as methods in the class. 
 
