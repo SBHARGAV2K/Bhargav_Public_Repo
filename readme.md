@@ -24,11 +24,11 @@ ii) _EncryptedPDFManagement_: Contains methods to deal with encrypted PDF files.
 
 iii) _LogicGatesDataframes_: Codes to implement the 7 basic logic gates, and a working example to show how they can be used to perform efficient dataframe operations.
 
-iv) _PDFClassifier_: 
+iv) _PDFClassifier_: To identify if a given PDF file is text-based (digital) or image-based (scanned).
 
-v) _XMLDataManagement_:
+v) _XMLDataManagement_: Converts simple XML files to Pandas data frames, and complex ones to JSON. Note that, since the method of extracting records from the XML file depends on its tree structure, a standard method is not available. However, you can tweak the existing ones according to your use-case(s) and include them as methods in the class. 
 
-The methods and classes in each project are designed using Sphonx docstring format, and the codes follow PEP8 style guidelines.
+The methods and classes in each project are documented using the ***Sphinx docstring*** format, and the codes follow ***PEP8 style guidelines***.
 
 Also, feel free to check out my technical content and profile through the following links:- 
 
