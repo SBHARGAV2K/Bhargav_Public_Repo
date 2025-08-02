@@ -2,8 +2,8 @@ from xml_data_management import XMLDataManagement
 from datetime import datetime
 
 if __name__ == '__main__':
-    xml_path = 'books.xml'
-    # xml_path = 'purchase_orders.xml'
+    # xml_path = 'books.xml'
+    xml_path = 'purchase_orders.xml'
     
     xml_obj = XMLDataManagement(xml_path)
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
             books_list.append(dict(child.attrib))
         
         xml_obj.save_as_csv(books_list, csv_output_path)
-        print(f"Succesfully saved the XML records as JSON in {csv_output_path}")
+        print(f"Succesfully saved the XML records as CSV in {csv_output_path}")
 
 
     elif xml_path == 'purchase_orders.xml':
@@ -42,7 +42,10 @@ if __name__ == '__main__':
         for child in xml_obj.root:
             data = {}    
             for att in child.attrib.keys():
-                data[att] = child.attrib[att]
+                if att == 'OrderDate':
+                    data[att] = datetime.strptime(child.attrib[att], '%Y-%m-%d').strftime('%d-%m-%Y')
+                else:
+                    data[att] = child.attrib[att]
             data["Address"] = []
             data["Items"] = []
             for subchild in child:
@@ -51,7 +54,10 @@ if __name__ == '__main__':
                     for att2 in subchild.attrib.keys():
                         address[att] = subchild.attrib[att2]
                     for add_ele in subchild:
-                        address[add_ele.tag] = add_ele.text
+                        if add_ele.tag == 'Zip':
+                            address[add_ele.tag] = int(add_ele.text)
+                        else:
+                            address[add_ele.tag] = add_ele.text
                     data[subchild.tag].append(address)
                 elif subchild.tag == 'Items':
                     for item in subchild:
@@ -61,7 +67,13 @@ if __name__ == '__main__':
                         print(items)
                         for i in item:
                             items[i.tag] = i.text
-                        data[subchild.tag].append(items)
+                            if i.tag == 'Quantity':
+                                items[i.tag] = int(i.text)
+                            elif 'Price' in i.tag:
+                                items[i.tag] = float(i.text)
+                            elif i.tag == 'ShipDate':
+                                items[i.tag] = datetime.strptime(i.text, '%Y-%m-%d').strftime('%d-%m-%Y')
+                            data[subchild.tag].append(items)
                 else:
                     data[subchild.tag] = subchild.text
             purchases.append(data)

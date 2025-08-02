@@ -1,7 +1,7 @@
 [
   {
     "PurchaseOrderNumber": "99503",
-    "OrderDate": "1999-10-20",
+    "OrderDate": "20-10-1999",
     "Address": [
       {
         "OrderDate": "Shipping",
@@ -9,7 +9,7 @@
         "Street": "123 Maple Street",
         "City": "Mill Valley",
         "State": "CA",
-        "Zip": "10999",
+        "Zip": 10999,
         "Country": "USA"
       },
       {
@@ -18,7 +18,7 @@
         "Street": "8 Oak Avenue",
         "City": "Old Town",
         "State": "PA",
-        "Zip": "95819",
+        "Zip": 95819,
         "Country": "USA"
       }
     ],
@@ -26,23 +26,65 @@
       {
         "PartNumber": "872-AA",
         "ProductName": "Lawnmower",
-        "Quantity": "1",
-        "USPrice": "148.95",
+        "Quantity": 1,
+        "USPrice": 148.95,
+        "Comment": "Confirm this is electric"
+      },
+      {
+        "PartNumber": "872-AA",
+        "ProductName": "Lawnmower",
+        "Quantity": 1,
+        "USPrice": 148.95,
+        "Comment": "Confirm this is electric"
+      },
+      {
+        "PartNumber": "872-AA",
+        "ProductName": "Lawnmower",
+        "Quantity": 1,
+        "USPrice": 148.95,
+        "Comment": "Confirm this is electric"
+      },
+      {
+        "PartNumber": "872-AA",
+        "ProductName": "Lawnmower",
+        "Quantity": 1,
+        "USPrice": 148.95,
         "Comment": "Confirm this is electric"
       },
       {
         "PartNumber": "926-AA",
         "ProductName": "Baby Monitor",
-        "Quantity": "2",
-        "USPrice": "39.98",
-        "ShipDate": "1999-05-21"
+        "Quantity": 2,
+        "USPrice": 39.98,
+        "ShipDate": "21-05-1999"
+      },
+      {
+        "PartNumber": "926-AA",
+        "ProductName": "Baby Monitor",
+        "Quantity": 2,
+        "USPrice": 39.98,
+        "ShipDate": "21-05-1999"
+      },
+      {
+        "PartNumber": "926-AA",
+        "ProductName": "Baby Monitor",
+        "Quantity": 2,
+        "USPrice": 39.98,
+        "ShipDate": "21-05-1999"
+      },
+      {
+        "PartNumber": "926-AA",
+        "ProductName": "Baby Monitor",
+        "Quantity": 2,
+        "USPrice": 39.98,
+        "ShipDate": "21-05-1999"
       }
     ],
     "DeliveryNotes": "Please leave packages in shed by driveway."
   },
   {
     "PurchaseOrderNumber": "99505",
-    "OrderDate": "1999-10-22",
+    "OrderDate": "22-10-1999",
     "Address": [
       {
         "OrderDate": "Shipping",
@@ -50,7 +92,7 @@
         "Street": "456 Main Street",
         "City": "Buffalo",
         "State": "NY",
-        "Zip": "98112",
+        "Zip": 98112,
         "Country": "USA"
       },
       {
@@ -59,7 +101,7 @@
         "Street": "456 Main Street",
         "City": "Buffalo",
         "State": "NY",
-        "Zip": "98112",
+        "Zip": 98112,
         "Country": "USA"
       }
     ],
@@ -67,15 +109,27 @@
       {
         "PartNumber": "456-NM",
         "ProductName": "Power Supply",
-        "Quantity": "1",
-        "USPrice": "45.99"
+        "Quantity": 1,
+        "USPrice": 45.99
+      },
+      {
+        "PartNumber": "456-NM",
+        "ProductName": "Power Supply",
+        "Quantity": 1,
+        "USPrice": 45.99
+      },
+      {
+        "PartNumber": "456-NM",
+        "ProductName": "Power Supply",
+        "Quantity": 1,
+        "USPrice": 45.99
       }
     ],
     "DeliveryNotes": "Please notify me before shipping."
   },
   {
     "PurchaseOrderNumber": "99504",
-    "OrderDate": "1999-10-22",
+    "OrderDate": "22-10-1999",
     "Address": [
       {
         "OrderDate": "Shipping",
@@ -83,7 +137,7 @@
         "Street": "4055 Madison Ave",
         "City": "Seattle",
         "State": "WA",
-        "Zip": "98112",
+        "Zip": 98112,
         "Country": "USA"
       },
       {
@@ -92,7 +146,7 @@
         "Street": "4055 Madison Ave",
         "City": "Buffalo",
         "State": "NY",
-        "Zip": "98112",
+        "Zip": 98112,
         "Country": "USA"
       }
     ],
@@ -100,14 +154,38 @@
       {
         "PartNumber": "898-AZ",
         "ProductName": "Computer Keyboard",
-        "Quantity": "1",
-        "USPrice": "29.99"
+        "Quantity": 1,
+        "USPrice": 29.99
+      },
+      {
+        "PartNumber": "898-AZ",
+        "ProductName": "Computer Keyboard",
+        "Quantity": 1,
+        "USPrice": 29.99
+      },
+      {
+        "PartNumber": "898-AZ",
+        "ProductName": "Computer Keyboard",
+        "Quantity": 1,
+        "USPrice": 29.99
       },
       {
         "PartNumber": "898-AM",
         "ProductName": "Wireless Mouse",
-        "Quantity": "1",
-        "USPrice": "14.99"
+        "Quantity": 1,
+        "USPrice": 14.99
+      },
+      {
+        "PartNumber": "898-AM",
+        "ProductName": "Wireless Mouse",
+        "Quantity": 1,
+        "USPrice": 14.99
+      },
+      {
+        "PartNumber": "898-AM",
+        "ProductName": "Wireless Mouse",
+        "Quantity": 1,
+        "USPrice": 14.99
       }
     ]
   }
