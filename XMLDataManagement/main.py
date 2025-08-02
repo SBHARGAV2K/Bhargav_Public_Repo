@@ -28,11 +28,16 @@ if __name__ == '__main__':
                     child.attrib[subchild.tag] = subchild.text
                 
                 elif subchild.tag == 'publish_date':
-                    child.attrib[subchild.tag] = datetime.strptime(subchild.text, '%Y-%m-%d').strftime('%d-%m-%Y')
+                    child.attrib[subchild.tag] = datetime.strptime(
+                                                    subchild.text,
+                                                    '%Y-%m-%d'
+                                                ).strftime('%d-%m-%Y')
             books_list.append(dict(child.attrib))
         
         xml_obj.save_as_csv(books_list, csv_output_path)
-        print(f"Succesfully saved the XML records as CSV in {csv_output_path}")
+        print(
+            f"Succesfully saved the XML records as CSV in {csv_output_path}"
+        )
 
 
     elif xml_path == 'purchase_orders.xml':
@@ -43,7 +48,10 @@ if __name__ == '__main__':
             data = {}    
             for att in child.attrib.keys():
                 if att == 'OrderDate':
-                    data[att] = datetime.strptime(child.attrib[att], '%Y-%m-%d').strftime('%d-%m-%Y')
+                    data[att] = datetime.strptime(
+                        child.attrib[att],
+                        '%Y-%m-%d'
+                    ).strftime('%d-%m-%Y')
                 else:
                     data[att] = child.attrib[att]
             data["Address"] = []
@@ -72,11 +80,16 @@ if __name__ == '__main__':
                             elif 'Price' in i.tag:
                                 items[i.tag] = float(i.text)
                             elif i.tag == 'ShipDate':
-                                items[i.tag] = datetime.strptime(i.text, '%Y-%m-%d').strftime('%d-%m-%Y')
+                                items[i.tag] = datetime.strptime(
+                                                    i.text,
+                                                    '%Y-%m-%d'
+                                                ).strftime('%d-%m-%Y')
                             data[subchild.tag].append(items)
                 else:
                     data[subchild.tag] = subchild.text
             purchases.append(data)
 
         xml_obj.save_as_json(purchases, json_output_path)
-        print(f"Succesfully saved the XML records as JSON in {json_output_path}")
+        print(
+            f"Succesfully saved the XML records as JSON in {json_output_path}"
+        )
