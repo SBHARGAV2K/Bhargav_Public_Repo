@@ -40,7 +40,7 @@ v) _PDFClassifier_: Identifies if a given PDF file is text-based (digital) or im
 !pip install PyMuPDF
 ```
 
-vi) _SensorNoiseFilters_: To build a user interface (UI) for filter noisy data obtained from sensor readings.
+vi) _SensorNoiseFilters_: Build a user interface (UI) to visualize noise filters for data obtained from real-time sensor readings.
 
 vii) _XMLDataManagement_: Converts simple XML files to Pandas data frames, and complex ones to JSON. Note that, since the method of extracting records from the XML file depends on its tree structure, a standard method is not available. However, you can tweak the existing ones according to your use-case(s) and include them as methods in the class. 
 
