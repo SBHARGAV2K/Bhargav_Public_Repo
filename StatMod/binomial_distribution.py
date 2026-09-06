@@ -8,3 +8,6 @@ class BinomialDistribution:
 
     def pmf(self, k):
         return stats.binom.pmf(k, self.n, self.p)
+
+    def cdf(self, k):
+        return stats.binom.cdf(k, self.n, self.p)
